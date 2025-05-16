@@ -27,14 +27,14 @@ Este projeto converte automaticamente arquivos PDF de laudos técnicos em imagen
 📁 khrono-pdf-converter/<br>
 │<br>
 ├── app/<br>
-│   └── app.py                # Interface principal<br>
+      └── app.py                # Interface principal<br>
 │<br>
 ├── functions/<br>
-│   └── main.py               # Funções de conversão<br>
-│   └── poppler/<br>
+      └── main.py               # Funções de conversão<br>
+      └── poppler/<br>
 │<br>
 ├── img/<br>
-│   └── Análise do Motor Dimensional.png  # Imagem de fundo<br>
+      └── Análise do Motor Dimensional.png  # Imagem de fundo<br>
 ├── README.md<br>
 ├── requirements.txt<br>
 └── .gitignore<br>
