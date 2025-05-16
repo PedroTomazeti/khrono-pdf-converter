@@ -45,14 +45,15 @@ Instale todas as dependências com:
 
 ```bash
 pip install -r requirements.txt
+```
 
 ## 🧪 Execução Local
 
 1. Crie e ative um ambiente virtual:
    ```bash
-python -m venv env
-# Ative:
-# Linux/macOS:
-source env/bin/activate
-# Windows:
-.\env\Scripts\activate
+   python -m venv env
+   # Ative:
+   # Linux/macOS:
+   source env/bin/activate
+   # Windows:
+   .\env\Scripts\activate
