@@ -6,18 +6,10 @@ import os
 import sys
 from PIL import Image
 from functions.main import iniciar_conversao
-import datetime
 
 # Configuração inicial
 ctk.set_appearance_mode("Dark")
 ctk.set_default_color_theme("dark-blue")
-
-LOG_FILE = "app.log"
-
-def log_message(message):
-    with open(LOG_FILE, "a") as log_file:
-        timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        log_file.write(f"[{timestamp}] {message}\n")
 
 log_queue = queue.Queue()
 running_event = threading.Event()
