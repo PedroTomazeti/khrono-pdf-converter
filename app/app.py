@@ -80,7 +80,7 @@ try:
     janela.label_img = ctk.CTkLabel(master=janela, image=bg_image, text="")
     janela.label_img.place(x=0, y=0, relwidth=1, relheight=1)
 except Exception as e:
-    log_message(f"Erro ao carregar imagem de fundo: {e}")
+    log_queue.put(f"Erro ao carregar imagem de fundo: {e}")
     background_label = ctk.CTkLabel(janela, text="", fg_color="#2b2b2b")
     background_label.place(x=0, y=0, relwidth=1, relheight=1)
 
@@ -116,7 +116,7 @@ log_box = ctk.CTkTextbox(
     state="disabled",
     fg_color="transparent",
     text_color="white",
-    font=("Arial", 10),
+    font=("Arial", 12),
     wrap="word",
     border_width=0,
     scrollbar_button_color="gray30"
