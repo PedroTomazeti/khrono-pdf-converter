@@ -24,9 +24,9 @@ Este projeto converte automaticamente arquivos PDF de laudos técnicos em imagen
 - `customtkinter`
 
 ## 📁 Estrutura de Pastas
-📁 khrono-pdf-converter/
-│
-├── app/
+📁 khrono-pdf-converter/<br>
+│<br>
+├── app/<br>
 │   └── app.py                # Interface principal<br>
 │<br>
 ├── functions/<br>
