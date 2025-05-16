@@ -65,7 +65,7 @@ pip install -r requirements.txt
 
 ## 🛠️ Compilar para Executável (.exe)
 ```bash
-   pyinstaller --noconfirm --onefile --windowed --add-data "img/Análise do Motor Dimensional.png;img" --add-data "poppler;poppler" --name "Khrono" main.py
+   pyinstaller --noconfirm --onefile --windowed --add-data "img/Análise do Motor Dimensional.png;img" --add-data "functions/poppler;poppler" --name "Khrono" app/app.py
 ```
 
 ## 📁 Estrutura do Projeto
