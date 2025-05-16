@@ -39,6 +39,13 @@ Este projeto converte automaticamente arquivos PDF de laudos técnicos em imagen
 ├── requirements.txt<br>
 └── .gitignore<br>
 
+## 🧪 Como Executar
+
+1. Crie e ative um ambiente virtual:
+   ```bash
+   python -m venv env
+   source env/bin/activate  # ou .\env\Scripts\activate no Windows
+
 ### Instalar dependências
 
 ```bash
