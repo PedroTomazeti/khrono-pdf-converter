@@ -1,62 +1,58 @@
-# Khrono - Conversor de Laudos (PDF → JPG)
-> Automação de conversão em `.JPG` do PDF de laudos técnico usando Python, com interface gráfica e análise de arquivo.
+# 🕒 Khrono - Conversor de Laudos Técnicos (PDF → JPG)
+
+> Conversão automatizada de laudos técnicos em `.PDF` para imagens `.JPG`, com interface gráfica interativa e tratamento inteligente de arquivos.
+
+---
 
 ## 💡 Objetivo
 
-Este projeto converte automaticamente arquivos PDF de laudos técnicos em imagens `.JPG`, ignorando a primeira página de cada documento. A interface foi desenvolvida com **CustomTkinter**.
+O **Khrono** é uma aplicação desenvolvida em **Python** com **CustomTkinter**, voltada para a automação da conversão de laudos técnicos em PDF para imagens `.JPG`.
 
-## 🚀 Como usar
+✔️ Ignora automaticamente a primeira página do PDF.  
+✔️ Detecta e evita conversões duplicadas.  
+✔️ Interface gráfica amigável e responsiva.
 
-1. Coloque os arquivos `.pdf` na pasta: `C:\PDF LAUDOS`.
-2. Execute o programa (`Khrono.exe` ou `python app/app.py`).
-3. As imagens serão salvas em: `C:\PDF LAUDOS\imagens\NOMEDOARQUIVO`.
-4. O PDF original será **excluído** após conversão.
+---
 
-> **Importante:** PDFs já convertidos (com pasta de destino criada) serão ignorados. Para reconverter, delete a pasta correspondente.
+## 📂 Como Usar
+
+1. Coloque os arquivos `.pdf` na pasta:  
+   `C:\PDF LAUDOS`
+
+2. Execute o programa:  
+   - Via terminal: `python app/app.py`  
+   - Ou através do executável: `Khrono.exe`
+
+3. As imagens `.jpg` serão salvas em:  
+   `C:\PDF LAUDOS\imagens\NOMEDOARQUIVO`
+
+4. O PDF original será **excluído automaticamente** após a conversão.
+
+> ⚠️ PDFs que já possuem pastas de imagens geradas serão ignorados. Para reconverter, exclua a pasta correspondente em `imagens/`.
 
 ---
 
 ## 🧰 Requisitos
 
 - Python 3.10+
-- `pdf2image`
-- `Pillow`
-- `customtkinter`
+- [Poppler](https://github.com/oschwartz10612/poppler-windows/releases) instalado e configurado no PATH
+- Bibliotecas Python:
+  - `pdf2image`
+  - `Pillow`
+  - `customtkinter`
 
-## 📁 Estrutura de Pastas
-📁 khrono-pdf-converter/<br>
-│<br>
-├── app/<br>
-      └── app.py                # Interface principal<br>
-│<br>
-├── functions/<br>
-      └── main.py               # Funções de conversão<br>
-      └── poppler/<br>
-│<br>
-├── img/<br>
-      └── Análise do Motor Dimensional.png  # Imagem de fundo<br>
-├── README.md<br>
-├── requirements.txt<br>
-└── .gitignore<br>
-
-## 🧪 Como Executar
-
-1. Crie e ative um ambiente virtual:
-   ```bash
-   python -m venv env
-   source env/bin/activate  # ou .\env\Scripts\activate no Windows
-
-### Instalar dependências
+Instale todas as dependências com:
 
 ```bash
 pip install -r requirements.txt
-```
 
-## Execute o script principal:
-> python -m app.app
+## 🧪 Execução Local
 
-## Para criar o .exe:
-> pyinstaller --onefile -w --name="Khrono" app/app.py
-
-## ⚠️ Avisos
-- Este projeto é uma versão genérica, sem qualquer vínculo com dados sensíveis ou proprietários. Adaptado exclusivamente para fins educacionais e de portfólio.
+1. Crie e ative um ambiente virtual:
+   ```bash
+python -m venv env
+# Ative:
+# Linux/macOS:
+source env/bin/activate
+# Windows:
+.\env\Scripts\activate
